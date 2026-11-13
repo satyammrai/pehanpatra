@@ -1,11 +1,22 @@
-<div align="center">
+# Satyam Rai — Portfolio Website
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+Personal portfolio built with **React**, **TypeScript**, **Tailwind CSS v4**, and **Vite**, showcasing ML research projects, full-stack web apps, and client websites.
 
-  <h1>Built with AI Studio</h2>
+## Local Development
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+```bash
+npm install
+npm run dev
+```
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## Production Build
 
-</div>
+```bash
+npm run build
+npm run preview
+```
+
+## Deploying
+
+- **Netlify / Vercel**: Connect your GitHub repository with build command `npm run build` and publish directory `dist`.
+- **GitHub Pages**: Either connect the repository in **Settings → Pages** (by adding a GitHub Actions workflow directly in the GitHub UI) or publish the generated `dist/` folder via `gh-pages`.
