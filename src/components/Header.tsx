@@ -19,21 +19,12 @@ export function Header() {
   return (
     <header className="sticky top-0 z-40 bg-[#FAFBF8]/90 backdrop-blur-md border-b border-zinc-200/80">
       <div className="max-w-6xl mx-auto px-6 sm:px-8 h-16 flex items-center justify-between gap-8">
-        {/* Zone 1: Single-line Logo + Wordmark */}
+        {/* Zone 1: Single-line wordmark */}
         <a
           href="#top"
-          className="inline-flex items-center gap-2.5 font-display text-lg font-bold tracking-tight text-zinc-950 whitespace-nowrap shrink-0 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-700 rounded"
+          className="font-display text-lg font-bold tracking-tight text-zinc-950 whitespace-nowrap shrink-0 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-700 rounded"
         >
-          <span
-            className="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-gradient-to-br from-emerald-700 via-teal-600 to-amber-500 text-white shadow-xs shrink-0"
-            aria-hidden="true"
-          >
-            <svg viewBox="0 0 24 24" className="w-4 h-4 fill-none stroke-current" strokeWidth="2.2">
-              <path d="M6 15.5C6 17.5 8 18.5 10.5 18.5C13 18.5 14.5 17.2 14.5 15.4C14.5 13.5 12.8 12.8 10.2 12.1C7.8 11.5 6.3 10.7 6.3 8.8C6.3 6.9 7.9 5.5 10.4 5.5C12.6 5.5 14.1 6.4 14.5 7.8" strokeLinecap="round" />
-              <path d="M17.5 6.5V18" strokeLinecap="round" />
-            </svg>
-          </span>
-          <span>{PROFILE.name}</span>
+          {PROFILE.name}
         </a>
 
         {/* Zone 2: Concise single-line navigation links */}
